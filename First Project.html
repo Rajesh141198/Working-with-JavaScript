@@ -1,0 +1,179 @@
+<!DOCTYPE Html>
+<html>
+    <head>
+        <title>Basic Info</title>
+        <style>
+            body {
+                background-color: rgb(229, 231, 235);
+            }
+            .Box1 {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                width: 250px;
+                height: 25px;
+                margin-right: 100px;
+                margin-bottom: 35px;
+            }
+            .Box2 {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                display: block;
+                width: 250px;
+                height: 25px;
+                margin-bottom: 35px;
+            }
+            .Box3 {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                width: 250px;
+                height: 25px;
+                margin-right: 100px;
+                margin-bottom: 35px;
+            }
+            .Box4 {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                display: block;
+                width: 250px;
+                height: 25px;
+                margin-bottom: 35px;
+            }
+            .Box5 {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                width: 250px;
+                height: 25px;
+                margin-right: 100px;
+                margin-bottom: 35px;
+            }
+            .Box6 {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                display: block;
+                width: 250px;
+                height: 25px;
+            }
+            .Box7 {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                width: 250px;
+                height: 25px;
+                margin-left: 374px;
+            }
+            .Container1 {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 600px;
+                margin: 0 auto;
+            }
+            .Heading {
+                width: 700px;
+                color: white;
+                height: 40px;
+                border: none;
+                border-radius: 5px;
+                margin-left: 370px;
+                margin-top: 10px;
+                margin-bottom: 30px;
+                background-color: rgb(94, 158, 231);
+                font-size: 20px;
+                font-weight: 50px;
+            }
+            .submit {
+                background-color: rgb(17, 17, 17);
+                font-size: 18px;
+                color: white;
+                height: 40px;
+                width: 150px;
+                margin-left: 910px;
+                margin-top: 20px;
+                cursor: pointer;
+            }
+            .Nametag {
+                margin-left: 375px;
+            }
+        </style>
+    </head>
+    <body>
+        <button class="Heading">
+            <strong>EMPLOYEE PERSONAL INFO</strong>
+        </button>
+        <div class="Container1">
+            <div>
+                <label>FirstName *</label><br/>
+                <input class="Box1" type="text" id="firstName" placeholder="FirstName">
+            </div>
+            <div>
+                <label>LastName *</label><br/>
+                <input class="Box2" type="text" id="lastName" placeholder="LastName">
+            </div>
+        </div>
+        <div class="Container1">
+            <div>
+                <label>Mobile *</label><br/>
+                <input class="Box3" type="text" id="mobile" placeholder="Mobile Number">
+            </div>
+            <div>
+                <label>Email Id *</label><br/>
+                <input class="Box4" type="text" id="email" placeholder="Email Id">
+            </div>
+        </div>
+        <div class="Container1">
+            <div>
+                <label>LinkedIn</label><br/>
+                <input class="Box5" type="text" id="linkedin" placeholder="LinkedIn">
+            </div>
+            <div>
+                <label>Github</label><br/>
+                <input class="Box6" type="text" id="github" placeholder="Github">
+            </div>
+        </div>
+        <label class="Nametag">Address *</label><br/>
+        <input class="Box7" type="text" id="address" placeholder="Address">
+        <button class="submit" onclick="saveDetails()">Submit</button>
+        
+        <script>
+            function saveDetails() {
+                const form = {
+                    firstName: document.getElementById('firstName').value,
+                    lastName: document.getElementById('lastName').value,
+                    mobile: document.getElementById('mobile').value,
+                    email: document.getElementById('email').value,
+                    linkedin: document.getElementById('linkedin').value,
+                    github: document.getElementById('github').value,
+                    address: document.getElementById('address').value
+                };
+                localStorage.setItem('personalDetails', JSON.stringify(form));
+                alert('Details saved successfully!');
+            }
+
+            window.onload = function() {
+                const savedDetails = JSON.parse(localStorage.getItem('personalDetails'));
+                if (savedDetails) {
+                    document.getElementById('firstName').value = savedDetails.firstName;
+                    document.getElementById('lastName').value = savedDetails.lastName;
+                    document.getElementById('mobile').value = savedDetails.mobile;
+                    document.getElementById('email').value = savedDetails.email;
+                    document.getElementById('linkedin').value = savedDetails.linkedin;
+                    document.getElementById('github').value = savedDetails.github;
+                    document.getElementById('address').value = savedDetails.address;
+                }
+            }
+        </script>
+    </body>
+</html>
