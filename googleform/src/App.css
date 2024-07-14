@@ -1,0 +1,105 @@
+            body {
+                background-color: rgb(229, 231, 235);
+            }
+            .Box1 {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                width: 250px;
+                height: 25px;
+                margin-right: 100px;
+                margin-bottom: 35px;
+            }
+            .Box2 {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                display: block;
+                width: 250px;
+                height: 25px;
+                margin-bottom: 35px;
+            }
+            .Box3 {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                width: 250px;
+                height: 25px;
+                margin-right: 100px;
+                margin-bottom: 35px;
+            }
+            .Box4 {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                display: block;
+                width: 250px;
+                height: 25px;
+                margin-bottom: 35px;
+            }
+            .Box5 {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                width: 250px;
+                height: 25px;
+                margin-right: 100px;
+                margin-bottom: 35px;
+            }
+            .Box6 {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                display: block;
+                width: 250px;
+                height: 25px;
+            }
+            .Box7 {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                width: 250px;
+                height: 25px;
+                margin-left: 382px;
+            }
+            .Container1 {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 600px;
+                margin: 0 auto;
+            }
+            .Heading {
+                width: 700px;
+                color: white;
+                height: 40px;
+                border: none;
+                border-radius: 5px;
+                margin-left: 370px;
+                margin-top: 10px;
+                margin-bottom: 30px;
+                background-color: rgb(94, 158, 231);
+                font-size: 20px;
+                font-weight: 50px;
+            }
+            .submit {
+                background-color: rgb(17, 17, 17);
+                font-size: 18px;
+                color: white;
+                height: 40px;
+                width: 150px;
+                margin-left: 910px;
+                margin-top: 20px;
+                cursor: pointer;
+            }
+            .Nametag {
+                margin-left: 385px;
+            }
+      
