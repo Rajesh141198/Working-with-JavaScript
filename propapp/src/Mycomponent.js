@@ -4,7 +4,7 @@ const proptest = ({name}) => {
 
     return(
       <center>
-           <h1>Hello {name}!, How are you doing.</h1>
+           <h1>Hello {name}!.</h1>
       </center>
           
     ) ;
