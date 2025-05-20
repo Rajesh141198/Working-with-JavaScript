@@ -1,0 +1,80 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #f7f9fa;
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+  margin: 0;
+}
+
+.tweet {
+  background-color: #fff;
+  border: 1px solid #cfd9de;
+  border-radius: 16px;
+  padding: 12px 16px;
+  max-width: 598px;
+  width: 100%;
+}
+
+.tweet-header {
+  display: flex;
+  margin-bottom: 0; 
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.user-info {
+  flex-grow: 1;
+}
+
+.name-line {
+  margin-bottom: 2px; 
+  line-height: 1.2;
+}
+
+.name {
+  color: #0f1419;
+  font-weight: 700;
+  font-size: 15px;
+  margin-right: 4px;
+}
+
+.metadata {
+  color: #536471;
+  font-size: 15px;
+}
+
+.message {
+  color: #0f1419;
+  font-size: 15px;
+  line-height: 1.3;
+  margin: 0 0 0 0; 
+  word-break: break-word;
+}
+
+.actions {
+  display: flex;
+  margin-top: 12px;
+  margin-left: 60px;
+  color: #536471;
+  max-width: 425px;
+}
+
+.action {
+  display: flex;
+  align-items: center;
+  margin-right: 100px;
+  font-size: 13px;
+}
+
+.action i {
+  font-size: 16px;
+  margin-right: 4px;
+}

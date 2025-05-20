@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: sans-serif;
+}
+
+
+header {
+  height: 60px;
+  background-color: tomato;
+  text-align: center;
+  line-height: 60px;
+}
+
+
+footer {
+  height: 100px;
+  background-color: slategray;
+  text-align: center;
+  line-height: 100px;
+}
+
+main {
+  display: flex;
+  min-height: calc(100vh - 160px); 
+  
+}
+
+.left {
+  width: 100px;
+  background-color: coral;
+  padding: 20px;
+}
+.right {
+  width: 100px;
+  background-color: sandybrown;
+  padding: 20px;
+}
+.left, .center, .right {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.center {
+  flex: 1;
+  background-color: moccasin;
+  padding: 20px;
+}
