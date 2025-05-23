@@ -1,0 +1,57 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 10px;
+  background: #f0f0f0;
+  min-height: 100vh;
+  box-sizing: border-box;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+.header {
+  text-align: center;
+  margin: 5px 0; /* Reduced margin */
+  padding: 0;
+}
+
+.score, #startBtn {
+  margin: 5px; /* Reduced margin */
+}
+
+.timer {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  font-size: 18px; /* Slightly smaller */
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(4, 100px); /* Smaller blocks */
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px; /* Reduced gap */
+  margin: 5px auto; /* Reduced margin */
+  justify-content: center;
+}
+
+.block {
+  width: 100px;
+  height: 100px;
+  border: 2px solid brown;
+  border-radius: 50%;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.mole {
+  width: 80%;
+  height: 80%;
+  margin: 10%;
+  object-fit: contain;
+  display: block;
+}
